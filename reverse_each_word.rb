@@ -1,7 +1,7 @@
 require "pry"
 def reverse_each_word(string)
-  string_array = string.split(" ")
-  string_array.each do |word|
+  string_array = string.split(" ") # returns array
+  string_array.map do |word| 
     word.reverse
   end
   string_array.join(" ")
