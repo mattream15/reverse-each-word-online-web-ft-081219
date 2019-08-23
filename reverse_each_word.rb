@@ -1,10 +1,10 @@
 require "pry"
 def reverse_each_word(string)
   string_array = string.split(" ") # returns array
-  string_array.map do |word| 
+  string_array.map do |word|  # return a new array of the same length as the original but modified by whatever our block returns
     word.reverse
   end
-  string_array.join(" ")
+  string_array.join(" ") # retuns a string with spaces
 end
 def reverse_each_word(string)
   string.split(" ").collect{ |word| word.reverse}.join(" ")
